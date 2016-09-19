@@ -968,17 +968,17 @@ form input[type="button"]{
         }
 		
 		.betweenFloors_start {
-			background: url("../images/mobile/betweenFloors/buildingStartSection-small.svg") no-repeat;
+			background: url("../images/mobile/betweenFloors/buildingStartSection-small.png") no-repeat;
 			background-size: 100% 100%;
 		}
 
 		.betweenFloors_middle {
-			background: url("../images/mobile/betweenFloors/buildingMiddleSection-small.svg") no-repeat;
+			background: url("../images/mobile/betweenFloors/buildingMiddleSection-small.png") no-repeat;
 			background-size: 100% 100%;
 		}
 
 		.betweenFloors_top {
-			background: url("../images/mobile/betweenFloors/buildingTopSection-small.svg") no-repeat;
+			background: url("../images/mobile/betweenFloors/buildingTopSection-small.png") no-repeat;
 			background-size: 100% 100%;
 		}
     }
