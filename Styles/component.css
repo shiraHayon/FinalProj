@@ -1,0 +1,161 @@
+.dotstyle {
+position: fixed;
+top: 50%;
+right: 1%;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+z-index: 1;
+}
+.dotstyle ul {
+position: relative;
+display: inline-block;
+margin: 0;
+padding: 0;
+list-style: none;
+cursor: default;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.dotstyle-tooltip li {
+position: relative;
+display: block;
+margin: 30px 16px;
+width: 30px;
+height: 30px;
+cursor: pointer;
+background-color: #969696;
+border-radius: 50%;
+border: 2px solid #969696;
+-webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.dotstyle-tooltip li a{
+display: block;
+width: auto;
+height: 100%;
+}
+.dotstyle-tooltip li a span{
+background-color: #fff;
+background-color: rgba(255, 255, 255, 0.3);
+text-indent: -999em; /* make the text accessible to screen readers */
+cursor: pointer;
+position: absolute;
+text-decoration: none;
+font-family: 'Heebo', sans-serif;
+top: auto;
+left: -145%;
+padding: 0 10px;
+width: auto;
+height: auto;
+border-radius: 0;
+color: #fff;
+text-indent: 0;
+line-height: 2;
+opacity: 0;
+-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s ease;
+transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s ease;
+}
+.dotstyle-tooltip li a span::after { 
+position: absolute;
+left: 100%;
+width: 0;
+height: 0;
+border: solid transparent;
+border-width: 6px;
+margin-top: -6px;
+border-color: transparent;
+content: '';
+pointer-events: none;
+top: 50%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: opacity 0.3s ease;
+transition: opacity 0.3s ease;
+}
+.dotstyle-tooltip li:hover {
+z-index: 100;	
+}
+.dotstyle-tooltip li a:hover span{
+z-index: 100;
+opacity: 1;
+-webkit-transform: translateX(-50%) translateY(0%);
+transform: translateX(-50%) translateY(0%);
+-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.dotstyle-tooltip li.active {
+-webkit-transform: scale(1.2);
+transform: scale(1.2);
+background-clip: content-box;
+padding:3px;
+}
+.dotstyle-tooltip #startLi.active,.dotstyle-tooltip #startLi:hover,.dotstyle-tooltip #startLi span {
+background-color: #FFC000;
+}
+.dotstyle-tooltip #startLi.active {
+border: 2px solid #FFC000;
+}
+.dotstyle-tooltip #startLi span::after{
+border-left-color: #FFC000;
+} 
+.dotstyle-tooltip #firstLi.active,.dotstyle-tooltip #firstLi:hover,.dotstyle-tooltip #firstLi span{
+background-color: #ED7D31;	
+}
+.dotstyle-tooltip #firstLi.active {
+ border: 2px solid #ED7D31;
+}
+.dotstyle-tooltip #firstLi span::after{
+border-left-color: #ED7D31;
+}
+.dotstyle-tooltip #secondLi.active,.dotstyle-tooltip #secondLi:hover,.dotstyle-tooltip #secondLi span  {
+background-color: #C00000;	
+}
+.dotstyle-tooltip #secondLi.active {
+border: 2px solid #C00000;
+}
+.dotstyle-tooltip #secondLi span::after{
+border-left-color: #C00000;
+}
+.dotstyle-tooltip #thirdLi.active,.dotstyle-tooltip #thirdLi:hover,.dotstyle-tooltip #thirdLi span  {
+background-color: #7030A0;	
+}
+.dotstyle-tooltip #thirdLi.active {
+border: 2px solid #7030A0;
+}
+.dotstyle-tooltip #thirdLi span::after{
+border-left-color: #7030A0;
+}
+.dotstyle-tooltip #fourLi.active,.dotstyle-tooltip #fourLi:hover,.dotstyle-tooltip #fourLi span  {
+background-color: #44546A;	
+}
+.dotstyle-tooltip #fourLi.active {
+border: 2px solid #44546A;
+}
+.dotstyle-tooltip #fourLi span::after{
+border-left-color: #44546A;
+}
+.dotstyle-tooltip #fiveLi.active,.dotstyle-tooltip #fiveLi:hover,.dotstyle-tooltip #fiveLi span  {
+background-color: #70AD47;	
+}
+.dotstyle-tooltip #fiveLi.active {
+ border: 2px solid #70AD47;
+}
+.dotstyle-tooltip #fiveLi span::after{
+border-left-color: #70AD47;
+}
+.dotstyle-tooltip #aboutLi.active,.dotstyle-tooltip #aboutLi:hover,.dotstyle-tooltip #aboutLi span  {
+background-color: #000;	
+}
+.dotstyle-tooltip #aboutLi.active {
+border: 2px solid #000;
+}
+.dotstyle-tooltip #aboutLi span::after{
+border-left-color: #000;
+}
+
+
+

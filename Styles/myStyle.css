@@ -1,0 +1,1199 @@
+﻿/*-----general properties-----*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Assistant', sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+	font-size:10px;
+}
+.container-fluid {
+    height: 100%;
+}
+
+.rtl .row {
+    height: 100%;
+}
+
+.fakeRow {
+    height: 100%;
+}
+/*desktop navigation bar*/
+
+#Logo{
+    position: fixed;
+    top: 2%;
+    right:10px;
+    z-index:3;
+}
+#Logo img{
+    width: 80px;
+}
+
+/*-----intro-----*/
+#skyScreen {
+    background: url("../images/desktop/opening/SkyDesktop.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden
+}
+
+    #skyScreen img {
+        height: 100%;
+        width: 28px;
+    }
+
+#bird1{ 
+    background: url("../images/flyingBird.gif") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15%;    
+    top: 40%;
+    position: absolute;
+    visibility: hidden;
+}
+
+#bird2{
+    background: url("../images/flyingBird.gif") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15%;
+    top:20%;
+    position: absolute;
+    visibility: hidden;
+}
+
+#skyText {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 12%;
+    text-align: center;
+}
+
+#skyText h1{
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold
+}
+
+#scrolling {
+    margin-top: 5%;
+    text-align: center;
+    display: block;
+}
+
+#scrolling:active, #scrolling:hover {
+    text-decoration: none;
+}
+
+#scrolling:hover {
+    cursor:pointer
+}
+
+#scrollingText{
+    font-size: 18px;
+    color: #fff;
+}
+
+@media only screen and (min-width: 1680px){
+     #skyScreen img {
+        height: 100%;
+        width: 40px;
+    }
+
+    #skyText {
+        font-size: 32px;
+        font-weight: 600;
+        margin-top: 12%;
+        text-align: center;
+    }
+
+    #scrollingText{
+        font-size: 26px;
+        color: #fff;
+    }
+}
+/*-----between floors-----*/
+.betweenFloors_start {
+    background: url("../images/desktop/betweenFloor/buildingStartSection.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.betweenFloors_middle {
+    background: url("../images/desktop/betweenFloor/buildingMiddleSection.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.betweenFloors_top {
+    background: url("../images/desktop/betweenFloor/buildingTopSection.svg") no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/*-----city-----*/
+#city {
+    background: url("../images/desktop/city/backgroundScreen.svg") no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    overflow-x: hidden;
+}
+
+#buildings {
+    background: url("../images/desktop/city/allBludingsBigSpacer.svg") no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: 66%;
+    padding-bottom: 0;
+}
+
+#airplane {
+    background: url("../images/desktop/city/airplane.svg") no-repeat center center;
+    background-size: contain;
+    height: 30%;
+    position: relative;
+    visibility: hidden;
+}
+
+    /*text properties*/
+
+    #airplane p {
+        margin-top: 5%;
+        left: 0;
+    }
+
+@media only screen and (min-width: 1024px) {
+    #airplane p {
+        margin-top: 9%;
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    #airplane p {
+        margin-top: 5%;
+        font-size: 14px;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #airplane p {
+        font-size: 19px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #airplane p {
+        padding-left: 5%;
+    }
+}
+/*end text properties*/
+
+/*-----end city screen-----*/
+
+/*-----floor1 - family-----*/
+#floor1 {
+    background: url("../images/desktop/floor1/floor1_background.svg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+#dad {
+    background: url(../images/desktop/floor1/dad.svg) no-repeat;
+    background-size: contain;
+    height: 70%;
+    background-position: center bottom;
+    margin-top: 8em;
+    position: absolute;
+    visibility: hidden;
+}
+
+#momAndBaby {
+    background: url(../images/desktop/floor1/momAndBaby.svg) no-repeat;
+    background-size: contain;
+    height: 70%;
+    background-position: center bottom;
+    margin-top: 8em;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+/*text properties*/
+#floor1Text {
+    background: url("../images/desktop/floor1/Tv.svg") no-repeat;
+    background-size: 60%;
+    background-position: center top;
+    position: absolute;
+    height: 60%;
+    margin-top: 1%;
+}
+
+
+#floor1Text p {
+    position: absolute;
+    color: white;
+    right: 25%;
+    line-height: 23px;
+    font-size: 17px;
+    top: 3%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #floor1Text p {
+        line-height: 15px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #floor1Text p {
+        line-height: 21px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    #floor1Text p {
+        line-height: 24px;
+        font-size: 25px;
+    }
+}
+/*end text properties*/
+
+/*-----end floor1 - family-----*/
+
+/*-----floor2 - students-----*/
+#floor2 {
+    background: url("../images/desktop/floor2/Floor2Desktop.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#student1 {
+    background: url(../images/desktop/floor2/student1.svg) no-repeat;
+    background-size: contain;
+    height: 70%;
+    background-position: bottom;
+    top: 26%;
+    position: absolute;
+    visibility: hidden;
+}
+
+#student2 {
+    background: url(../images/desktop/floor2/student2.svg) no-repeat;
+    background-size: contain;
+    height: 70%;
+    background-position: bottom;
+    top: 26%;
+    position: absolute;
+    left: 25%;
+    visibility: hidden;
+}
+
+/*floor2 text properties*/
+#floor2Text {
+    background: url("../images/desktop/floor2/borad.svg") no-repeat;
+    background-size: 60%;
+    background-position: center top;
+    position: absolute;
+    height: 50%;
+    margin-top: 1%;
+}
+
+    #floor2Text p {
+        margin: 10% 24% 0 0;
+    }
+
+@media only screen and (min-width: 1024px) {
+    #floor2Text p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #floor2Text p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+/*end text properties*/
+
+/*floor3 - old people*/
+#floor3 {
+    background: url("../images/desktop/floor3/Floor3Desktop.svg") no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*text properties*/
+#floor3Text {
+    background: url("../images/desktop/floor3/paperOnFridge.svg") no-repeat;
+    background-size: 70%;
+    background-position: right top;
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    right: 5%;
+    padding-top: 3%;
+}
+
+@media only screen and (min-width: 1024px) {
+    #floor3Text p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    #floor3Text {
+        right: 3%;
+    }
+     #floor3Text p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}
+@media only screen and (min-width: 1680px) {
+    #floor3Text p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+/*end text properties*/
+
+#grandmother {
+    background: url(../images/desktop/floor3/grandma.svg) no-repeat;
+    background-size: contain;
+    height: 70%;
+    background-position: center top;
+    margin-top: 20%;
+    position: absolute;
+    visibility: hidden;
+
+}
+
+#grandfather {
+    background: url(../images/desktop/floor3/grandpa.svg) no-repeat;
+    background-size: contain;
+    height: 70%;
+    background-position: center top;
+    margin-top: 20%;
+    position: absolute;
+    left: 15%;
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 1366px) {
+    #grandmother, #grandfather{
+        margin-top: 15%
+    }
+}
+
+
+/*-----end floor3 - old people-----*/
+
+/*-----floor4 - handyman-----*/
+#floor4 {
+    background: url("../images/desktop/floor4/Floor4DesktopV2.svg") no-repeat;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/*text properties*/
+#floor4Text {
+    background: url("../images/desktop/floor4/MirrorWithSink.svg") no-repeat;
+    background-size: contain;
+    background-position: right top;
+    height: 100%;
+    position: absolute;
+}
+
+
+    #floor4Text p {
+        margin-top: 6%;
+        margin-right: 4%;
+        font-size: 16px;
+        line-height: 25px;
+        position: absolute;
+    }
+
+@media only screen and (min-width: 1440px) {
+    #floor4Text p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+/*end text properties*/
+
+
+#handyman {
+    background: url(../images/desktop/floor4/handyman.svg) no-repeat;
+    background-size: contain;
+    height: 80%;
+    background-position: bottom;
+    margin-top: 10%;
+    position: absolute;
+    visibility: hidden;
+}
+@media only screen and (min-width: 1024px) {
+    #handyman {
+        margin-top: 15%;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    #handyman {
+        margin-top: 10%;
+    }
+}
+
+/*-----end floor4 - handyman-----*/
+
+/*-----floor5 - Unmanned floor-----*/
+#floor5{
+    overflow-x: hidden
+}
+
+.door {
+    background: url("../images/desktop/floor5/door.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*text properties*/
+.NoteForRent {
+    background: url("../images/desktop/floor5/NoteForRentDesktop.svg") no-repeat;
+    background-size: contain;
+    height: 40%;
+    position: absolute;
+    top: 25%;
+    right: 9%;
+}
+
+@media only screen and (max-width: 1335px) {
+    .NoteForRent {
+        right: 13%;
+    }
+}
+
+    #floor5Text p {
+        margin-top: 10%;
+        margin-right: 10%;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+@media only screen and (min-width: 1680px) {
+    #floor5Text p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+/*end text properties*/
+
+/*-----questionnaire properties-----*/
+
+#questionnaire {
+    background-color: #E4DBCD;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#clipBorad {
+    background: url("../images/desktop/floor5/clipboard.svg") no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 100%;
+}
+
+#openQuestionnaire {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 55px;
+}
+
+.displayNone {
+    display: none;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+form {
+    margin-top: 25%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #openQuestionnaire{
+         margin-top: 40%;
+    } 
+    form {
+        margin-top: 70%;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #openQuestionnaire {
+        margin-top: 20%;
+    }
+
+    form {
+        margin-top: 25%;
+    }
+}
+
+form input[type="radio"]{
+    height: 20px;
+    width: 25px;
+}
+
+form input[type="button"]{
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1680px) {
+    form {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    form input[type="button"]{
+        margin-top: 10%;
+        font-size: 30px;
+    }
+}
+
+/*success questionnaire*/
+
+#successQuestionnaire {
+    background: url("../images/desktop/floor5/doorOpen.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.emptyFloorImg {
+    background: url("../images/desktop/floor5/emptyRoom.svg") no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+
+#emptyFloorText {
+    margin-top: 5%;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+#faliledText{
+    text-align: center;
+    padding-top: 2%;
+}
+
+@media screen and (max-width: 1366px){
+    #faliledText{
+         line-height: 16px;
+    }
+}
+   
+
+#notExcepted{
+    font-weight: 800;
+    font-size: 2em;
+    color: #ac1f25;
+}
+/*-----end floor5 - Unmanned floor-----*/
+
+/*-----about screen-----*/
+#about {
+    background-color: #33CCCC;
+    position: relative;
+    overflow-x: hidden
+}
+
+#aboutText{
+    text-align: center;
+    margin-top: 4%;
+}
+
+#project h3{
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#project p{
+    font-size: 24px;
+}
+
+#telemLink{
+    font-size: 20px;
+    color: black;
+}
+
+#HIT, #holon{
+    margin-top: 2%;
+    padding-right: 0;
+}
+
+#logoHIT, #logoHolon{
+    width: 150px;
+}
+
+#holon p, #HIT p{
+    text-align: initial;
+    font-size: 20px;
+}
+
+#copyright{
+    font-size: 11px;
+    position: absolute;
+    bottom: 5%;
+
+}
+@media screen and (max-width:1366px){
+    #copyright{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    #project h3{
+        font-size: 32px;
+    }
+
+    #project p{
+        font-size: 26px;
+    }
+
+    #logoHIT, #logoHolon{
+        width: 200px;
+    }
+
+    #holon p, #HIT p{
+        text-align: initial;
+        font-size: 25px;
+    }  
+
+    #copyright{
+        margin-top: 15%;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:1680px){
+    #project h3{
+        font-size: 36px;
+    }
+
+    #project p{
+        font-size: 28px;
+    }
+
+    #logoHIT, #logoHolon{
+        width: 250px;
+    }
+
+    #holon p, #HIT p{
+        text-align: initial;
+        font-size: 26px;
+    }  
+
+    #copyright{
+        margin-top: 10%;
+        font-size: 20px;
+    }
+}
+
+/*-----end about screen-----*/
+
+/*class for turn your phone*/
+.landscapeDisplay{
+    display: none;
+}
+
+/*-----mobile view properties-----*/
+
+@media screen and (max-width: 991px) {
+    /*-----general prperties-----*/
+    .main-div {
+        height: 70vh;
+    }
+
+    .mobile-div {
+        background-image: url('../images/mobile/vintage_speckles.png');
+        font-size: 20px;
+        height: 30vh;
+        position: absolute;
+        padding-right: 5%;
+
+    }
+
+    .mobile-row {
+        height: 60%;
+    }
+
+    #bulldingMenu {
+        margin-top: 20%;
+    }
+
+    #mobileFixedBar{
+        height: 8%;
+    }
+
+    .rtl .navbar-header{
+        margin-right: 15%;
+    }
+
+    #navbarContent{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .navbar-brand{
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 5%;
+    }
+
+    #logoNav {
+        height: 160%;
+    }
+/*show specific div for the user to turn his device to portrait*/
+@media screen and (max-device-width: 736px) and (orientation: landscape) {
+    body{
+        overflow-y:hidden; 
+    }
+    .landscapeDisplay{
+        display: block;
+        background-color: #8CC9DB;
+    }
+
+    #rotateDevice{
+        text-align: center;
+    }
+
+    #mobileFixedBar{
+        display: none;
+    }
+}
+
+
+@media screen and (max-device-width: 480px){
+    .landscapeDisplay{
+        display: none;
+    }
+
+    .main-div {
+        height: 65vh;
+    }
+
+    .mobile-div {
+       font-size: 1.6rem;
+		height: 35vh;
+		line-height: 2rem;
+    }
+
+    .rtl .navbar-header{
+        margin-right: 0;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: 5%;
+        padding-right: 0px;
+    }
+
+    #mobileFixedBar{
+        height: 0;
+    }
+
+    #logoNav {
+        height: 100%;
+    }
+
+    #NavbarFloors {
+        background-color: #8CC9DC;
+        margin-top: 50px;
+        position: fixed;
+        right:0;
+        z-index:2; 
+        height: 100%;
+        padding-top: 20%;
+        padding-right: 0;
+        padding-left: 0;
+        display: none;
+    }
+
+    #NavbarFloors div{
+        padding: 22px 0;
+    }
+}
+   
+    #NavbarFloors {
+        background-color: #8CC9DC;
+        margin-top: 10%;
+        position: fixed;
+        padding-right: 0;
+        padding-left: 0;
+        right:0;
+        z-index:2; 
+        display: none;
+    }
+
+    #NavbarFloors div{
+        padding: 0;
+    }
+    
+
+    #NavbarFloors h2{
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Assistant', sans-serif;
+        display: inline-block;
+        color: #fff;
+        margin-right: 9%;   
+    }
+
+    .glyphicon{
+        margin-right: 5%;
+        color: white;
+    }
+
+    #navAbout .glyphicon{
+        margin-right: 7%;
+    }
+
+    #navOpening{
+        background-image: url('../images/mobile/navigationBar/buildingMobileNavStart.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:20% 0;
+        margin-top: -1px;
+    }
+    #navFloor1,#navFloor2,#navFloor3,#navFloor4, #navFloor5{
+        background-image: url('../images/mobile/navigationBar/buildingMobileNav.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:20% 0;
+        margin-top: -1px;    
+    }
+    #navAbout{
+        background-image: url('../images/mobile/navigationBar/buildingMobileNavEnd.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:20% 0;
+    }
+
+    #bird1{
+        top: 40%;
+    }
+
+    #skyText {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 35%;
+    }
+
+    #scrollingText {
+        font-size: 25px;
+    }
+
+    #scrollingText {
+        font-size: 25px;
+    }
+
+    @media screen and (max-device-width: 480px){
+        #skyText {
+            margin-top: 50%;
+            font-size: 15px;
+        }
+         #scrollingText {
+            font-size: 10px;
+        }
+    }
+
+    /*-----between floors-----*/
+    .betweenFloors_start {
+        background: url("../images/mobile/betweenFloors/buildingStartSection.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .betweenFloors_middle {
+        background: url("../images/mobile/betweenFloors/buildingMiddleSection.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .betweenFloors_top {
+        background: url("../images/mobile/betweenFloors/buildingTopSection.svg") no-repeat;
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed;
+    }
+
+    /*-----city screen-----*/
+    .buildings {
+        background: url("../images/mobile/city/mobile_cityBig.svg") no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    #airplane p {
+        margin-right: 5px;
+    }
+
+    #floor1-mobile, #floor2-mobile, #floor3-mobile, #floor4-mobile{
+        overflow-x: hidden
+        overflow-y:hidden;
+    }
+
+    /*-----floor1 - family-----*/
+    #floor1 {
+        background: url("../images/mobile/floor1/floor1_background.svg") no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    #floor1Text p {
+        margin-right: 5px;
+        color: black;
+    }
+
+    /*-----floor2 - students-----*/
+    #floor2 {
+        background: url("../images/desktop/floor2/Floor2Desktop.svg") no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    #floor2Text p {
+        margin: 0 5px 0 0;
+    }
+
+    #student1 {
+        height: 65%;
+    }
+
+    #student2 {
+        height: 65%;
+        left: 15%;
+    }
+
+    /*-----floor3 - old people-----*/
+    #floor3 {
+        background: url("../images/desktop/floor3/Floor3Desktop.svg") no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        overflow-x: hidden;
+    }
+
+    #grandmother, #grandfather {
+        margin-top: 20%;
+    }
+
+    @media screen and (max-width: 480px) {
+        #grandmother, #grandfather {
+            height: 95%;
+            top: 15%;
+        }
+    }
+
+    /*-----floor4 - handyman-----*/
+    #floor4 {
+        background: url("../images/mobile/floor4/floor4_backgroundWithMirror.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    /*-----floor5 - unmanned floor-----*/
+    #clipBorad {
+        background: url("../images/mobile/floor5/clipboardSmall-02.svg") no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #openQuestionnaire {
+        margin-top: 40%;
+        text-align: center;
+        font-size: 25px;
+        line-height: 50px;
+
+    }
+
+    form {
+        margin-top: 50%;
+        font-size: 15px;
+        line-height: 29px;
+    }
+
+@media screen and (max-device-width: 480px){
+    #openQuestionnaire {
+        margin-top: 40%;
+        text-align: center;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    form {
+        margin-top: 60%;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    form input[type="radio"]{
+        height: 11px;
+        width: 14px;
+    }
+
+    form input[type="button"]{
+        margin-top: 10%;
+        height: 30px;
+        font-size: 11px;
+    }
+}
+    #errorMessage {
+        font-size: 10px;
+    }
+
+    #successQuestionnaire-mobile {
+        background: url("../images/mobile/floor5/doorOpen.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .emptyFloorImg {
+        background: url("../images/mobile/floor5/emptyRoomMobile2-02-02.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #forRentDoor{
+        background: url("../images/mobile/floor5/forRent.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    #notRented{
+        background: url("../images/mobile/floor5/doorClosed.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tryAgainBtn{
+        margin-top: 43%;
+        width: 24%;
+        height: 11%;
+        font-size: 17px;
+    }
+
+    #aboutText{
+        margin-top: 25%;
+    }
+    #copyright {
+        margin-top: 25%;
+    }
+    /*-----about-----*/ 
+    @media screen and (max-device-width: 480px){
+        #tryAgainBtn{
+            margin-top: 95%;
+            width: 24%;
+            height: 11%;
+            font-size: 17px;
+            padding: 0;
+        }
+
+        #aboutText{
+            text-align: center;
+            margin-top: 25%;
+        }
+
+        #project h3{
+            font-family: 'Assistant', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #project p{
+            font-size: 14px;
+        }
+
+        #telemLink{
+            font-size: 12px;
+            color: black;
+        }
+        #HIT{
+            margin-top: 5%;
+            padding-right: 0;
+        }
+
+        #holon{
+            margin-top: 5%;
+        }
+
+        #logoHIT, #logoHolon {
+            width: 100px;
+        }
+
+        #holon p, #HIT p{
+            text-align: initial;
+            font-size: 12px;
+        }
+
+        #copyright{
+            font-size: 11px;
+        }
+}   
+    
+    /*-----active for mobile navbar-----*/
+    /*change apperance on active floor by scrooling/clicking */
+     #NavbarFloors .active{
+        background-color: white;
+    }
+
+    #NavbarFloors .active h2{
+        color: black;
+    }
+
+    #NavbarFloors .active .glyphicon{
+        color: black;
+    }
+}

@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+   
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800|Heebo:300,400,500,700,800&subset=hebrew" rel="stylesheet">
+    <!--Bootstrap 3 css file-->
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!--Bootstrap fixes for hebrew (add class='rtl' to the body tag)-->
+    <link href="Bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
+    <!--Bootstrap them - for changing the shape and colors of bootstrap objects like buttons-->
+    <link href="Bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <!--The only file you should right your css-->
+    <link href="Styles/myStyle.css" rel="stylesheet" />
+    <link href="Styles/animation.css" rel="stylesheet" />
+    <link href="Styles/component.css" rel="stylesheet" />
+
+</head>
+
+<body id="page-top" class="rtl">
+    <div id="container" class="container-fluid">
+        <!--landscape "turn your phone" div-->
+        <div class="row landscapeDisplay">
+            <img src="images/spinLogo.gif" class="col-xs-offset-4 col-xs-4">
+            <br/>
+            <p id="rotateDevice" class="col-xs-12">כדי לצפות בסיפור יש לסובב את המכשיר</p>
+        </div>
+
+        <!--desktop navigation -->
+        <div id="Logo" class="hidden-xs hidden-sm"><a href="#skyScreen"><img src="images/desktop/opening/Logo.svg"></a></div>
+        
+        <div  id="nav-bar" class="hidden-xs hidden-sm dotstyle dotstyle-tooltip">
+            <ul class="nav-fixed">    
+                <li id="startLi" ><a href="#one"><span>פתיחה</span></a></li>
+                <li id="firstLi" ><a href="#two"><span>קומה 1</span></a></li>
+                <li id="secondLi" ><a href="#three"><span>קומה 2</span></a></li>
+                <li id="thirdLi" ><a href="#four"><span>קומה 3</span></a></li>
+                <li id="fourLi" ><a href="#five"><span>קומה 4</span></a></li>
+                <li id="fiveLi" ><a href="#six"><span>קומה 5</span></a></li>
+                <li id="aboutLi"><a href="#seven"><span>אודות</span></a></li>
+              </ul>
+        </div>
+
+
+        <!--mobile fixed top bar-->
+        <nav id="mobileFixedBar" class="hidden-md hidden-lg navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                    <div class="navbar-header">
+                        <span id="navbarContent" class="navbar-brand">
+                            <a href="#NavbarFloors"><img id="logoNav" src="images/mobile/navigationBar/navLogo.svg" /></a>
+                        </span>
+                        <span class="navbar-brand">הבניין שאהב לשתף</span>
+                    </div>
+            </div>
+        </nav>
+        <!--mobile navbar-->
+        <div id="NavbarFloors" class="hidden-md hidden-lg col-xs-12">
+            <a href="#about">
+                <div id="navAbout">
+                    <h2>אודות</h2>
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </div>
+            </a>
+            <a href="#floor5-mobile">
+                <div id="navFloor5"><h2>קומה 5</h2><span class="glyphicon glyphicon-chevron-left"></span></div>
+            </a>
+            <a href="#floor4-mobile">
+                <div id="navFloor4"><h2>קומה 4</h2><span class="glyphicon glyphicon-chevron-left"></span></div>
+            </a>
+            <a href="#floor3-mobile">
+                <div id="navFloor3"><h2>קומה 3</h2><span class="glyphicon glyphicon-chevron-left"></span></div>
+            </a>
+            <a href="#floor2-mobile">
+                <div id="navFloor2"><h2>קומה 2</h2><span class="glyphicon glyphicon-chevron-left"></span></div>
+            </a>
+            <a href="#floor1-mobile">
+                <div id="navFloor1"><h2>קומה 1</h2><span class="glyphicon glyphicon-chevron-left"></span></div>
+            </a>
+            <a href="#skyScreen">
+                <div id="navOpening"><h2>פתיחה</h2><span class="glyphicon glyphicon-chevron-left"></span></div>
+            </a>
+        </div>
+
+        <!--sky screen-->
+        <div id="skyScreen" class="row hash ne full eavesdrop">
+            <span id="bird1" class="col-xs-2 col-md-3 animatedLeftElement"></span>
+            <div id="skyText" class="col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6">
+                <h1 class="hidden-xs hidden-sm">"הבניין שאהב לשתף"</h1>
+                <br/>
+                <p>
+                    במקום דיי נחמד במרכז המדינה
+                    <br />
+                    שוכנת לה עיר מיוחדת במינה.
+                    <br />
+                    משתמשת בתבונה ובהוגנות במשאבים שברשותה,
+                    <br />
+                    ומנהלת מערכת אקולוגית גלובלית לכל תושביה לרווחה.
+                </p>
+                <a id="scrolling" onclick="gotoCity()">
+                    <span id="scrollingText">התחילו לגלול</span>
+                    <br/>
+                    <img class="floating" src="images/desktop/opening/arrow.png"/>
+                </a>
+            </div>
+            <span id="bird2" class="col-xs-2 col-md-3 animatedRightElement"></span>
+        </div>
+
+        <!--desktop - city screen-->
+        <div id="city" class="hidden-xs hidden-sm row">
+            <div id="airplane" class="col-md-offset-3 col-md-6 animatedRightElement">
+                <p class="col-md-offset-6 col-md-5">
+                    בעיר חולונית, "הבריאה ומקיימת",
+                    <br />
+                    קיים בניין הדוגל בכלכלה אחרת.
+                    <br />
+                    כלכלה בה אדם או ארגון מציעים מוצרים ושירותים
+                    <br />
+                    לשימושם של אנשים אחרים,
+                    <br />
+                    וכך הם יוצרים "כלכלה שיתופית"
+                    <br />
+                    התורמת לערכי הקיימות השונים.
+                </p>
+            </div>
+            <div id="buildings" class="col-md-12 main-div"></div>
+        </div>
+
+        <!--mobile - city screen-->
+        <div id="city-mobile" class="hidden-md hidden-lg row hash">
+            <div class="buildings main-div"></div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    בעיר חולונית, "הבריאה ומקיימת",
+                    <br />
+                    קיים בניין הדוגל בכלכלה אחרת.
+                    <br />
+                    כלכלה בה אדם או ארגון מציעים מוצרים ושירותים
+                    <br />
+                    לשימושם של אנשים אחרים,
+                    <br />
+                    וכך הם יוצרים "כלכלה שיתופית"
+                    <br />
+                    התורמת לערכי הקיימות השונים.
+                </p>
+            </div>
+        </div>
+
+        <!--between floors start-->
+        <div class="row mobile-row betweenFloors_start"></div>
+
+        <!--floor1 desktop - family screen-->
+        <div id="floor1" class="hidden-xs hidden-sm row two full eavesdrop">
+            <div id="floor1Text" class="col-md-offset-3 col-md-6">
+                <p>
+                    בקומה הראשונה גרה משפחה צעירה,
+                    <br />
+                    שעד לא מזמן הם היו שניים ועכשיו הם שלושה.
+                    <br />
+                    הצטרפו הם לקבוצת הפייסבוק של השכונה,
+                    <br />
+                    ומחכים הם להודעה על בגדים למסירה.
+                    <br />
+                    כשיגדל הילדון, והבגדים לא יתאימו יותר
+                    <br />
+                    אזי ימסרו הם לילד אחר.
+                    <br />
+                    <br />
+                    כך משפחה צעירה, בבניין לא רגיל
+                    <br />
+                    מקיימת "כלכלה שיתופית" מבלי שתרגיש.
+                </p>
+            </div>
+            <div class="col-md-offset-4 col-md-12 fakeRow">
+                <div id="dad" class="col-md-offset-1 col-md-4 animatedLeftElement"></div>
+                <div id="momAndBaby" class="col-md-offset-3 col-md-4 animatedRightElement"></div>
+            </div>
+        </div>
+
+        <!--floor1 - mobile family screen-->
+        <div id="floor1-mobile" class="hidden-md hidden-lg row hash">
+            <div id="floor1" class="main-div">
+                <div id="dad" class="col-xs-6 animatedLeftElement"></div>
+                <div id="momAndBaby" class="col-xs-6 animatedRightElement"></div>
+            </div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    בקומה הראשונה גרה משפחה צעירה,
+                    <br />
+                    שעד לא מזמן הם היו שניים ועכשיו הם שלושה.
+                    <br />
+                    הצטרפו הם לקבוצת הפייסבוק של השכונה,
+                    <br />
+                    ומחכים הם להודעה על בגדים למסירה.
+                    <br />
+                    כשיגדל הילדון, והבגדים לא יתאימו יותר
+                    <br />
+                    <br />
+                    אזי ימסרו הם לילד אחר.
+                    <br />
+                    כך משפחה צעירה, בבניין לא רגיל
+                    <br />
+                    מקיימת "כלכלה שיתופית" מבלי שתרגיש.
+                </p>
+            </div>
+        </div>
+
+        <!--between floors middle-->
+        <div class="row betweenFloors_middle"></div>
+
+        <!--floor2 desktop- students screen-->
+        <div id="floor2" class="hidden-xs hidden-sm row three full eavesdrop">
+            <div id="floor2Text" class="col-md-5 col-lg-4">
+                <p>
+                    בקומה השנייה, גרים סטודנטים להנדסה
+                    <br />
+                    שבאים מרחוק כל הדרך מחיפה.
+                    <br />
+                    שכרו הם דירה, עזבו את הקן
+                    <br />
+                    והבטיחו לחזור לבקר.
+                    <br />
+                    כשרוצים הם לחזור לבקר את ההורים,
+                    <br />
+                    נכנסים לאפליקציה לבדוק רכבים זמינים.
+                    <br />
+                    <br />
+                    כך זוג סטודנטים, בבניין לא רגיל
+                    <br />
+                    מצמצמים את זיהום האוויר
+                    <br />
+                    ומקיימים "כלכלה שיתופית" מבלי שתרגיש
+                </p>
+            </div>
+            <div class="col-md-offset-4 col-md-12 fakeRow">
+                <div id="student1" class="col-md-offset-3 col-md-3 animatedLeftElement"></div>
+                <div id="student2" class="col-md-3 animatedRightElement"></div>
+            </div>
+        </div>
+
+        <!--floor2 mobile- students screen-->
+        <div id="floor2-mobile" class="hidden-md hidden-lg row hash">
+            <div id="floor2" class="main-div">
+                <div id="student1" class="col-xs-offset-2 col-xs-4 animatedLeftElement"></div>
+                <div id="student2" class="col-xs-offset-1 col-xs-4 animatedRightElement"></div>
+            </div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    בקומה השנייה, גרים סטודנטים להנדסה
+                    <br />
+                    שבאים מרחוק כל הדרך מחיפה.
+                    <br />
+                    שכרו הם דירה, עזבו את הקן
+                    <br />
+                    והבטיחו לחזור לבקר.
+                    <br />
+                    כשרוצים הם לחזור לבקר את ההורים,
+                    <br />
+                    נכנסים לאפליקציה לבדוק רכבים זמינים.
+                    <br />
+                    <br />
+                    כך זוג סטודנטים, בבניין לא רגיל
+                    <br />
+                    מצמצמים את זיהום האוויר
+                    <br />
+                    ומקיימים "כלכלה שיתופית" מבלי שתרגיש
+                </p>
+            </div>
+        </div>
+
+        <!--between floors middle-->
+        <div class="row betweenFloors_middle"></div>
+
+        <!--floor3 desktop - old people screen-->
+        <div id="floor3" class="hidden-xs hidden-sm row four full eavesdrop">
+            <div id="floor3Text" class="col-md-offset-1 col-md-3">
+                <p>
+                    מהקומה השלישית, בריח נרגיש,
+                    <br />
+                    אף פעם לא ננחש מה מתבשל שם בסיר.
+                    <br />
+                    מרגל קרושה ועד לעוגת גבינה,
+                    <br />
+                    כל דבר שנבקש, הם יכינו בשמחה.
+                    <br />
+                    אלו הם גברת ואדון קפלוצ'קי-
+                    <br />
+                    זוג פנסיונרים, האוהבים לבשל
+                    <br />
+                    ומרוויחים מכך כסף בשביל לתת לבן.
+                    <br />
+                    <br />
+                    כך זוג פנסיונרים, בבניין לא רגיל
+                    <br />
+                    מקיימים "כלכלה שיתופית" מבלי שנרגיש.
+                </p>
+            </div>
+            <div class="col-md-offset-4 col-md-12 fakeRow">
+                <div id="grandmother" class="col-md-offset-5 col-md-3 animatedLeftElement"></div>
+                <div id="grandfather" class="col-md-offset-1 col-md-3 animatedRightElement"></div>
+            </div>
+        </div>
+
+        <!--floor3 mobile - old people screen-->
+        <div id="floor3-mobile" class="hidden-md hidden-lg row hash">
+            <div id="floor3" class="main-div">
+                <div id="grandmother" class="col-xs-offset-4 col-xs-3 animatedLeftElement"></div>
+                <div id="grandfather" class="col-xs-offset-1 col-xs-3 animatedRightElement"></div>
+            </div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    מהקומה השלישית, בריח נרגיש,
+                    <br />
+                    אף פעם לא ננחש מה מתבשל שם בסיר.
+                    <br />
+                    מרגל קרושה ועד לעוגת גבינה,
+                    <br />
+                    כל דבר שנבקש, הם יכינו בשמחה.
+                    <br />
+                    אלו הם גברת ואדון קפלוצ'קי-
+                    <br />
+                    זוג פנסיונרים, האוהבים לבשל
+                    <br />
+                    ומרוויחים מכך כסף בשביל לתת לבן.
+                    <br />
+                    <br />
+                    כך זוג פנסיונרים, בבניין לא רגיל
+                    <br />
+                    מקיימים "כלכלה שיתופית" מבלי שנרגיש.
+                </p>
+            </div>
+        </div>
+
+        <!--between floors middle-->
+        <div class="row betweenFloors_middle"></div>
+
+        <!--floor4 desktop - handyman screen-->
+        <div id="floor4" class="hidden-xs hidden-sm row five full eavesdrop">
+            <div id="floor4Text" class="col-md-offset-4 col-md-4">
+                <p>
+                    בקומה הרביעית גר רמי הקיבונציק,
+                    <br />
+                    שעשה הסבת מקצוע והפך לשיפוצניק.
+                    <br />
+                    שובר הוא קירות, מתקן ארונות,
+                    <br />
+                    ברזים דולפים ומגירות תקועות.
+                    <br />
+                    כל מה שצריך כדי לתקן,
+                    <br />
+                    כל מה שצריך כדי לשפץ,
+                    <br />
+                    תוכל למצוא אצל רמי, בחפץ לב.
+                    <br />
+                    <br />
+                    כך שיפוצניק, בבניין לא רגיל
+                    <br />
+                    מקיים "כלכלה שיתופית" מבלי שירגיש.
+                </p>
+            </div>
+            <div class="col-md-offset-4 col-md-12 fakeRow">
+                <div id="handyman" class="col-md-4 animatedLeftElement"></div>
+            </div>
+        </div>
+
+        <!--floor4 mobile - handyman screen-->
+        <div id="floor4-mobile" class="hidden-md hidden-lg row hash">
+            <div id="floor4" class="main-div">
+                <div id="handyman" class="col-xs-offset-1 col-xs-5 animatedLeftElement"></div>
+            </div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    בקומה הרביעית גר רמי הקיבונציק,
+                    <br />
+                    שעשה הסבת מקצוע והפך לשיפוצניק.
+                    <br />
+                    שובר הוא קירות, מתקן ארונות,
+                    <br />
+                    ברזים דולפים ומגירות תקועות.
+                    <br />
+                    כל מה שצריך כדי לתקן,
+                    <br />
+                    כל מה שצריך כדי לשפץ,
+                    <br />
+                    תוכל למצוא אצל רמי, בחפץ לב.
+                    <br />
+                    <br />
+                    כך שיפוצניק, בבניין לא רגיל
+                    <br />
+                    מקיים "כלכלה שיתופית" מבלי שירגיש.
+                </p>
+            </div>
+        </div>
+
+        <!--between floors middle-->
+        <div class="row betweenFloors_top"></div>
+
+        <!--floor5 desktop - Unmanned floor-->
+        <div id="floor5" class="hidden-xs hidden-sm row door six full eavesdrop">
+            <div id="floor5Text" class="col-md-offset-3 col-md-3 col-lg-offset-4 col-lg-2 NoteForRent">
+                <p>
+                    הקומה החמישית, עדיין לא מאוישת,
+                    <br />
+                    מחפשת את האחד או האחת שיתאים למורשת.
+                    <br />
+                    הדייר שיבוא צריך לדעת שקיימת,
+                    <br />
+                    "כלכלה שיתופית", כלכלה אחרת.
+                    <br />
+                    בה מוכרים ושוכרים שירותים מאנשים,
+                    <br />
+                    ושומרים על הכדור לדורות הבאים.
+                </p>
+            </div>
+        </div>
+
+        <!--floor5 mobile - Unmanned floor-->
+        <div id="floor5-mobile" class="hidden-md hidden-lg row hash">
+            <div id="forRentDoor" class="main-div"></div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    הקומה החמישית, עדיין לא מאוישת,
+                    <br />
+                    מחפשת את האחד או האחת שיתאים למורשת.
+                    <br />
+                    הדייר שיבוא צריך לדעת שקיימת,
+                    <br />
+                    "כלכלה שיתופית", כלכלה אחרת.
+                    <br />
+                    בה מוכרים ושוכרים שירותים מאנשים,
+                    <br />
+                    ושומרים על הכדור לדורות הבאים.
+                </p>
+            </div>
+        </div>
+
+        <!--floor5 questionnaire-->
+        <div id="questionnaire" class="row">
+            <div id="clipBorad" class="col-xs-12">
+                <p id="openQuestionnaire">
+                    ענו על 5 שאלות ובדקו
+                    <br />
+                    האם אתם מתאימים להיות הדיירים החדשים בבניין
+                    <br />
+                    בהצלחה!
+                    <br />
+                    <button class="btn btn-warning btn-lg" onclick="startQuestionnaire('qestOne','openQuestionnaire')">התחילו</button>
+                </p>
+
+                <div id="qestOne" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">
+                    <form>
+                        <span><strong>שאלה מספר 1:</strong></span>
+                        <br />
+                        <span>עשיתם סדר בארון וכמובן, גיליתם ערמה יפה של בגדים שלא לבשתם כבר יותר משנה... מה תעשו?</span>
+                        <br />
+                        <input type="radio" name="clothes" value="wrong">נזרוק לפח<br>
+                        <input type="radio" name="clothes" value="wrong">נשים במיחזורית<br>
+                        <input type="radio" name="clothes" value="right">נפרסם ברשת חברתית / נתלה פתק בשכונה ונציע למכירה/מסירה<br>
+                        <input type="button" value="המשך" class="btn continueBtn col-xs-offset-4 col-xs-4" onclick="checkAnswer('clothes','qestTwo','qestOne')">
+                    </form>
+
+                </div>
+
+                <div id="qestTwo" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">
+                    <form>
+                        <span><strong>שאלה מספר 2:</strong></span>
+                        <br />
+                        <span>מזל טוב! נולד תינוק חדש. איך נשיג את כל הציוד הדרוש?</span>
+                        <br />
+                        <input type="radio" name="baby" value="wrong"> ניכנס לרשת הגדולה ונעמיס מכל טוב – מגיע לו הכל חדש!<br>
+                        <input type="radio" name="baby" value="right">ניכנס לאתר יד שניה ונחפש לרכוש מוצרים איכותיים שמישהו כבר אהב פעם<br>
+                        <input type="radio" name="baby" value="wrong">נעשה מחקר אינטרנטי המשווה איכות-מחיר ונקנה בחוכמה<br>
+                        <input type="button" value="המשך" class="btn continueBtn col-xs-offset-4 col-xs-4" onclick="checkAnswer('baby', 'qestThree', 'qestTwo')">
+                    </form>
+                </div>
+
+                <div id="qestThree" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">
+                    <form>
+                        <span><strong>שאלה מספר 3:</strong></span>
+                        <br />
+                        <span>עברתם לדירה חדשה. צריך לתלות מראה? צריך לחזק מדף?</span>
+                        <br />
+                        <input type="radio" name="neighbor" value="right">נדפוק על דלת השכן החדש, נגיד שלום, נציע עוגיות ונשאל אם יש באמתחתו כלים שנוכל לשאול לשבוע הקרוב.<br>
+                        <input type="radio" name="neighbor" value="wrong">נרכוש מקדחה משוכללת שגם מבריגה, גם קודחת ומתאימה לכל סוגי העבודות. הרי עוד כשנתיים נעבור דירה שוב ונצטרך גם אז<br>
+                        <input type="radio" name="neighbor" value="wrong">נעשה מחקר אינטרנטי המשווה איכות-מחיר ונקנה בחוכמה<br>
+                        <input type="button" value="המשך" class="btn continueBtn col-xs-offset-4 col-xs-4" onclick="checkAnswer('neighbor', 'qestFour', 'qestThree')">
+                    </form>
+                </div>
+
+
+                <div id="qestFour" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">
+                    <form>
+                        <span><strong>שאלה מספר 4:</strong></span>
+                        <br />
+                        <span>נרשמתם לקורס מקרמה ייחודי פעם בשבוע במרחק של כ20 דקות נסיעה. איך תגיעו?</span>
+                        <br />
+                        <input type="radio" name="course" value="wrong">באוטו כמובן, אמנם יש פקקים ואין חניה אבל ככה אני לא חייב כלום לאף אחד...<br>
+                        <input type="radio" name="course" value="wrong">בתחבורה ציבורית<br>
+                        <input type="radio" name="course" value="right">בשיעור הראשון אשאל בכיתה – אולי יש מישהו שגר ממש לידי ונוכל להתחלק בנסיעות?<br>
+                        <input type="button" value="המשך" class="btn continueBtn col-xs-offset-4 col-xs-4" onclick="checkAnswer('course', 'qestFive', 'qestFour')">
+                    </form>
+                </div>
+
+                <div id="qestFive" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">
+                    <form>
+                        <span><strong>שאלה מספר 5:</strong></span>
+                        <br />
+                        <span>השכנה מלמעלה עורכת מסיבת יום הולדת לביתה הקטנה בחצר הבניין ומבקשת מהשכנים עזרה, מה תוכל לתרום?</span>
+                        <br />
+                        <input type="radio" name="party" value="wrong">אני לא מעוניין לתת חפצים שלי. מה אם הם ישברו או ילכלכו אותם?<br>
+                        <input type="radio" name="party" value="right">אשמח להשאיל את השולחן המתקפל שלי ונדמה לי שראיתי כמה כיסאות פלסטיק במחסן.<br>
+                        <input type="radio" name="party" value="wrong">לא אתנגד לקיום המסיבה למרות שממש לא מוצא חן בעיניי שיעשו רעש במרחב הציבורי<br>
+                        <input id="lastQuestBtn" type="button" value="סיים שאלון" class="btn continueBtn col-xs-offset-4 col-xs-4" onclick="checkAnswer('party', 'checkSuccess', 'questionnaire')">
+                    </form>
+                </div>
+                <sapn id="errorMessage" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">עלייך לבחור תשובה אחת כדי להמשיך</sapn>
+            </div>
+        </div>
+
+        <div id="successQuestionnaire" class="hidden-xs hidden-sm row displayNone"></div>
+         <div id="successQuestionnaire-mobile" class="hidden-md hidden-lg row displayNone"></div>
+
+        <!--empty floor-succcess desktop-->
+        <div id="emptyFloor-desktop" class="hidden-xs hidden-sm row emptyFloorImg displayNone">
+            <div id="emptyFloorText" class="col-md-offset-7 col-md-4 col-lg-offset-5">
+                <p>
+                    ברוך הבא לבניין!
+                    <br />
+                    הדירה ריקה וצריך לרהט אותה.
+                    <br />
+                    תיעזר בקבוצות בפייסבוק
+                    <br />
+                    תחפש בחנויות או אתרי יד 2
+                    <br />
+                    אולי אחד השכנים יש רהיטים למסור
+                    <br />
+                    לא הכל חייב להיות חדש
+                    <br />
+                    כך ביחד נשמור על העולם!
+                    <br />
+                    כדי ללמוד קיימות בעיר היכנסו לאתר העירייה לקטגוריה קיימות ותגלו מה עוד יש לעיר להציע...
+                </p>
+            </div>
+        </div>
+
+        <!--empty floor-succcess mobile-->
+        <div id="emptyFloor-mobile" class="hidden-md hidden-lg row displayNone">
+            <div class="main-div emptyFloorImg"></div>
+            <div class="mobile-div col-xs-12">
+                <p>
+                    ברוך הבא לבניין!
+                    <br />
+                    הדירה ריקה וצריך לרהט אותה.
+                    <br />
+                    תיעזר בקבוצות בפייסבוק
+                    <br />
+                    תחפש בחנויות או אתרי יד 2
+                    <br />
+                    אולי אחד השכנים יש רהיטים למסור
+                    <br />
+                    לא הכל חייב להיות חדש
+                    <br />
+                    כך ביחד נשמור על העולם!
+                    <br />
+                    כדי ללמוד קיימות בעיר היכנסו לאתר העירייה לקטגוריה קיימות ותגלו מה עוד יש לעיר להציע...
+                </p>
+            </div>
+        </div>
+
+        <!--empty floor-failed desktop-->
+        <div id="faliledQuestionnaire" class="hidden-xs hidden-sm row door displayNone">
+            <div id="faliledText" class="col-md-offset-3 col-md-3 col-lg-offset-4 col-lg-2 NoteForRent">
+                <span id="notExcepted">לא התקבלת</span>
+                <p>
+                    אבל אולי יש עוד סיכוי,
+                    <br />
+                    תעבור שוב על הסיפור,
+                    <br />
+                    תחפש מידע ברשת,
+                    <br />
+                    ותנסה שוב
+                </p>
+               
+                <button type="button" class="btn btn-warning btn-sm" onclick="startQuestionnaire('questionnaire','faliledQuestionnaire')">נסו שוב</button>
+                
+            </div>
+        </div>
+
+         <!--empty floor-failed mobile-->
+        <div id="faliledQuestionnaire-mobile" class="hidden-md hidden-lg row displayNone">
+            <div id="notRented" class="main-div">
+                <button id="tryAgainBtn" type="button" class="col-xs-offset-5 btn btn-warning btn-sm" onclick="startQuestionnaire('questionnaire','faliledQuestionnaire')">נסו שוב</button>
+            </div>
+            <div class="mobile-div col-xs-12">
+                <span>לא התקבלת</span>
+                <br />
+                <p>
+                    אבל אולי יש עוד סיכוי,
+                    <br />
+                    תעבור שוב על הסיפור,
+                    <br />
+                    תחפש מידע ברשת,
+                    <br />
+                    ותנסה שוב
+                </p>
+            </div>
+        </div>
+
+
+        <!--about-->
+        <div id="about" class="row hash seven full eavesdrop">
+            <div id="aboutText" class="">
+                <span id="project" class="col-xs-12">
+                    <h3>"הבניין שאהב לשתף"</h3>
+                    <p>
+                       אתר רספונסיבי למחלקת הקיימות בעיריית חולון בנושא הכלכלה השיתופית
+                    </p>
+                    <p id="telem">
+                       פרויקט גמר תשע"ו
+                       <br/>
+                       <a id="telemLink" href="http://www.hit.ac.il/start/telem/ba/">
+                            הפקולטה לטכנולוגיות למידה
+                       </a>
+                   </p>
+                </span>
+                <div id="HIT" class="col-xs-12">
+                    <img id="logoHIT" class="col-xs-offset-2 col-xs-2 col-sm-offset-3 col-md-offset-4 col-md-2" src="images/desktop/about/logoHIT-2.png">
+                    <p>
+                        <strong>צוות הפרויקט:</strong>
+                        <br/>
+                        שירה חיון וסיון גיורא
+                        <br/>
+                        <strong>מנחים:</strong>
+                        <br/>
+                        חגית מישר טל ונוהר רז פוגל 
+                    </p>
+                </div>
+                <div id="holon" class="col-xs-12">
+                    <img id="logoHolon" class="col-xs-offset-2 col-xs-2 col-sm-offset-3 col-md-offset-4 col-md-1" src="images/desktop/about/logoHolon.png">
+                    <p>
+                        <strong>בשיתוף עם:</strong>
+                        <br/>
+                        עיריית חולון - מחלקת קיימות
+                        <br/>
+                        <strong>נציגת הארגון:</strong>
+                        <br/>
+                        רוני ארז
+                    </p>
+                </div>
+                <div id="copyright" class="col-xs-12">
+                    <span class="glyphicon glyphicon-copyright-mark"></span>
+                    כל הזכויות שמורות למכון הטכנולוגי חולון HIT
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.10.2.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <!--Bootstrap library-->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <!--navigation libraries-->
+    <script src="jScripts/jquery.easing.min.js"></script>
+    <script src="jScripts/jquery.eavesdrop.min.js"></script>  
+</body>
+
+</html>
