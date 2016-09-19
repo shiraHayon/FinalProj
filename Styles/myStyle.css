@@ -606,7 +606,7 @@ form input[type="button"]{
 }
 
 .emptyFloorImg {
-    background: url("../images/desktop/floor5/emptyRoom.svg") no-repeat;
+    background: url("../images/desktop/floor5/EmptyRoom.svg") no-repeat;
     background-size: cover;
     background-position: right top;
 }
