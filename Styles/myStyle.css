@@ -950,21 +950,21 @@ form input[type="button"]{
     /*-----between floors-----*/
     .betweenFloors_start {
         background: url("../images/mobile/betweenFloors/buildingStartSection.svg") no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-attachment: fixed;
     }
 
     .betweenFloors_middle {
         background: url("../images/mobile/betweenFloors/buildingMiddleSection.svg") no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-attachment: fixed;
     }
 
     .betweenFloors_top {
         background: url("../images/mobile/betweenFloors/buildingTopSection.svg") no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center top;
         background-attachment: fixed;
     }
