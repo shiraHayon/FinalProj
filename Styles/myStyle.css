@@ -937,16 +937,6 @@ form input[type="button"]{
         font-size: 2.5rem;
     }
 
-    @media screen and (max-device-width: 480px){
-        #skyText {
-            margin-top: 50%;
-            font-size: 1.5rem;
-        }
-         #scrollingText {
-            font-size: 1rem;
-        }
-    }
-
     /*-----between floors-----*/
     .betweenFloors_start {
         background: url("../images/mobile/betweenFloors/buildingStartSection.svg") no-repeat;
@@ -968,7 +958,36 @@ form input[type="button"]{
         background-position: center top;
         background-attachment: fixed;
     }
+	@media screen and (max-device-width: 480px){
+        #skyText {
+            margin-top: 50%;
+            font-size: 1.5rem;
+        }
+         #scrollingText {
+            font-size: 1rem;
+        }
+		
+		.betweenFloors_start {
+			background: url("../images/mobile/betweenFloors/buildingStartSection-small.svg") no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
 
+		.betweenFloors_middle {
+			background: url("../images/mobile/betweenFloors/buildingMiddleSection-small.svg") no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		.betweenFloors_top {
+			background: url("../images/mobile/betweenFloors/buildingTopSection-small.svg") no-repeat;
+			background-size: cover;
+			background-position: center top;
+			background-attachment: fixed;
+		}
+    }
     /*-----city screen-----*/
     .buildings {
         background: url("../images/mobile/city/mobile_cityBig.svg") no-repeat;
