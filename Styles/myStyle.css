@@ -39,7 +39,8 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow-x: hidden
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
     #skyScreen img {
@@ -83,6 +84,7 @@ body{
     margin-top: 5%;
     text-align: center;
     display: block;
+    height:45px;
 }
 
 #scrolling:active, #scrolling:hover {
