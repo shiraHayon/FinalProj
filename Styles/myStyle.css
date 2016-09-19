@@ -68,7 +68,7 @@ body{
 }
 
 #skyText {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 600;
     margin-top: 12%;
     text-align: center;
@@ -94,7 +94,7 @@ body{
 }
 
 #scrollingText{
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
 }
 
@@ -105,14 +105,14 @@ body{
     }
 
     #skyText {
-        font-size: 32px;
+        font-size: 3.2rem;
         font-weight: 600;
         margin-top: 12%;
         text-align: center;
     }
 
     #scrollingText{
-        font-size: 26px;
+        font-size: 2.6rem;
         color: #fff;
     }
 }
@@ -172,21 +172,21 @@ body{
 @media only screen and (min-width: 1024px) {
     #airplane p {
         margin-top: 9%;
-        font-size: 13px;
-        line-height: 17px;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
     }
 }
 @media only screen and (min-width: 1366px) {
     #airplane p {
         margin-top: 5%;
-        font-size: 14px;
+        font-size: 1.4rem;
         padding-left: 10%;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     #airplane p {
-        font-size: 19px;
+        font-size: 1.9rem;
         line-height: 24px;
     }
 }
@@ -246,30 +246,30 @@ body{
     position: absolute;
     color: white;
     right: 25%;
-    line-height: 23px;
-    font-size: 17px;
+    line-height: 2.3rem;
+    font-size: 1.7rem;
     top: 3%;
 }
 
 
 @media only screen and (min-width: 1024px) {
     #floor1Text p {
-        line-height: 15px;
-        font-size: 14px;
+        line-height: 1.5rem;
+        font-size: 14rem;
     }
 }
 
 @media only screen and (min-width: 1366px) {
     #floor1Text p {
-        line-height: 21px;
-        font-size: 18px;
+        line-height: 2.1rem;
+        font-size: 1.8rem;
     }
 }
 
 @media only screen and (min-width: 1680px) {
     #floor1Text p {
-        line-height: 24px;
-        font-size: 25px;
+        line-height: 2.4rem;
+        font-size: 2.5rem;
     }
 }
 /*end text properties*/
@@ -322,15 +322,15 @@ body{
 
 @media only screen and (min-width: 1024px) {
     #floor2Text p {
-        font-size: 13px;
-        line-height: 17px;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     #floor2Text p {
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
     }
 }
 /*end text properties*/
@@ -359,8 +359,8 @@ body{
 
 @media only screen and (min-width: 1024px) {
     #floor3Text p{
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 @media only screen and (min-width: 1366px) {
@@ -368,15 +368,15 @@ body{
         right: 3%;
     }
      #floor3Text p{
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
 }
 @media only screen and (min-width: 1680px) {
     #floor3Text p{
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 1.8rem;
+        line-height: 3rem;
     }
 }
 
@@ -435,15 +435,15 @@ body{
     #floor4Text p {
         margin-top: 6%;
         margin-right: 4%;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
         position: absolute;
     }
 
 @media only screen and (min-width: 1440px) {
     #floor4Text p {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
     }
 }
 
@@ -503,14 +503,14 @@ body{
     #floor5Text p {
         margin-top: 10%;
         margin-right: 10%;
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
     }
 
 @media only screen and (min-width: 1680px) {
     #floor5Text p {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.8rem;
+        line-height: 2rem;
     }
 }
 
@@ -544,15 +544,15 @@ body{
 
 #errorMessage {
     color: red;
-    font-size: 26px;
+    font-size: 2.6rem;
     text-align: center;
     margin-top: 2%;
 }
 
 form {
     margin-top: 25%;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -581,18 +581,18 @@ form input[type="radio"]{
 
 form input[type="button"]{
     margin-top: 10%;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 1680px) {
     form {
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 3rem;
+        line-height: 6rem;
     }
 
     form input[type="button"]{
         margin-top: 10%;
-        font-size: 30px;
+        font-size: 3rem;
     }
 }
 
@@ -613,8 +613,8 @@ form input[type="button"]{
 
 #emptyFloorText {
     margin-top: 5%;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
 }
 
 #faliledText{
@@ -624,7 +624,7 @@ form input[type="button"]{
 
 @media screen and (max-width: 1366px){
     #faliledText{
-         line-height: 16px;
+         line-height: 1.6rem;
     }
 }
    
@@ -650,16 +650,16 @@ form input[type="button"]{
 
 #project h3{
     font-family: 'Assistant', sans-serif;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
 #project p{
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 #telemLink{
-    font-size: 20px;
+    font-size: 2rem;
     color: black;
 }
 
@@ -674,11 +674,11 @@ form input[type="button"]{
 
 #holon p, #HIT p{
     text-align: initial;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 #copyright{
-    font-size: 11px;
+    font-size: 1.1rem;
     position: absolute;
     bottom: 5%;
 
@@ -691,11 +691,11 @@ form input[type="button"]{
 
 @media screen and (min-width:1440px){
     #project h3{
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 
     #project p{
-        font-size: 26px;
+        font-size: 2.6rem;
     }
 
     #logoHIT, #logoHolon{
@@ -704,23 +704,23 @@ form input[type="button"]{
 
     #holon p, #HIT p{
         text-align: initial;
-        font-size: 25px;
+        font-size: 2.5rem;
     }  
 
     #copyright{
         margin-top: 15%;
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 }
 
 
 @media screen and (min-width:1680px){
     #project h3{
-        font-size: 36px;
+        font-size: 3.6rem;
     }
 
     #project p{
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 
     #logoHIT, #logoHolon{
@@ -729,12 +729,12 @@ form input[type="button"]{
 
     #holon p, #HIT p{
         text-align: initial;
-        font-size: 26px;
+        font-size: 2.6rem;
     }  
 
     #copyright{
         margin-top: 10%;
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -755,7 +755,7 @@ form input[type="button"]{
 
     .mobile-div {
         background-image: url('../images/mobile/vintage_speckles.png');
-        font-size: 20px;
+        font-size: 2rem;
         height: 30vh;
         position: absolute;
         padding-right: 5%;
@@ -784,7 +784,7 @@ form input[type="button"]{
     }
 
     .navbar-brand{
-        font-size: 40px;
+        font-size: 4rem;
         font-weight: bold;
         padding-top: 5%;
     }
@@ -832,7 +832,7 @@ form input[type="button"]{
     }
 
     .navbar-brand{
-        font-size: 22px;
+        font-size: 2.2rem;
         font-weight: bold;
         padding-top: 5%;
         padding-right: 0px;
@@ -881,7 +881,7 @@ form input[type="button"]{
     
 
     #NavbarFloors h2{
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 700;
         font-family: 'Assistant', sans-serif;
         display: inline-block;
@@ -924,26 +924,26 @@ form input[type="button"]{
     }
 
     #skyText {
-        font-size: 30px;
+        font-size: 3rem;
         font-weight: 600;
         margin-top: 35%;
     }
 
     #scrollingText {
-        font-size: 25px;
+        font-size: 2.5rem;
     }
 
     #scrollingText {
-        font-size: 25px;
+        font-size: 2.5rem;
     }
 
     @media screen and (max-device-width: 480px){
         #skyText {
             margin-top: 50%;
-            font-size: 15px;
+            font-size: 1.5rem;
         }
          #scrollingText {
-            font-size: 10px;
+            font-size: 1rem;
         }
     }
 
@@ -1054,29 +1054,29 @@ form input[type="button"]{
     #openQuestionnaire {
         margin-top: 40%;
         text-align: center;
-        font-size: 25px;
+        font-size: 2.5rem;
         line-height: 50px;
 
     }
 
     form {
         margin-top: 50%;
-        font-size: 15px;
-        line-height: 29px;
+        font-size: 1.5rem;
+        line-height: 3rem;
     }
 
 @media screen and (max-device-width: 480px){
     #openQuestionnaire {
         margin-top: 40%;
         text-align: center;
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 1.2rem;
+        line-height: 3rem;
     }
 
     form {
         margin-top: 60%;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
 
     form input[type="radio"]{
@@ -1087,11 +1087,11 @@ form input[type="button"]{
     form input[type="button"]{
         margin-top: 10%;
         height: 30px;
-        font-size: 11px;
+        font-size: 1.1rem;
     }
 }
     #errorMessage {
-        font-size: 10px;
+        font-size: 1rem;
     }
 
     #successQuestionnaire-mobile {
@@ -1122,7 +1122,7 @@ form input[type="button"]{
         margin-top: 43%;
         width: 24%;
         height: 11%;
-        font-size: 17px;
+        font-size: 1.7rem;
     }
 
     #aboutText{
@@ -1137,7 +1137,7 @@ form input[type="button"]{
             margin-top: 95%;
             width: 24%;
             height: 11%;
-            font-size: 17px;
+            font-size: 1.7rem;
             padding: 0;
         }
 
@@ -1148,16 +1148,16 @@ form input[type="button"]{
 
         #project h3{
             font-family: 'Assistant', sans-serif;
-            font-size: 18px;
+            font-size: 1.8rem;
             font-weight: bold;
         }
 
         #project p{
-            font-size: 14px;
+            font-size: 1.4rem;
         }
 
         #telemLink{
-            font-size: 12px;
+            font-size: 1.2rem;
             color: black;
         }
         #HIT{
@@ -1175,11 +1175,11 @@ form input[type="button"]{
 
         #holon p, #HIT p{
             text-align: initial;
-            font-size: 12px;
+            font-size: 1.2rem;
         }
 
         #copyright{
-            font-size: 11px;
+            font-size: 1.1rem;
         }
 }   
     

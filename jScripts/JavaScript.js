@@ -1,7 +1,4 @@
 ﻿$(document).ready(documentReady);
-$(window).resize(function(){location.reload();});
-
-
 function documentReady() {
 
     //run functions on easing.js and eavesdrop.js for desktop navigation
