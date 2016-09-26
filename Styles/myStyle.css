@@ -945,6 +945,7 @@ form input[type="button"]{
         background-size: contain;
         background-position: center;
         background-attachment: fixed;
+	height:100%;
     }
 
     .betweenFloors_middle {
@@ -952,6 +953,7 @@ form input[type="button"]{
         background-size: contain;
         background-position: center;
         background-attachment: fixed;
+	height:100%;
     }
 
     .betweenFloors_top {
@@ -959,6 +961,7 @@ form input[type="button"]{
         background-size: contain;
         background-position: center top;
         background-attachment: fixed;
+	height:100%;
     }
 	@media screen and (max-device-width: 480px){
         #skyText {
@@ -969,23 +972,26 @@ form input[type="button"]{
             font-size: 1.5rem;
         }
 		
-		.betweenFloors_start {
-			background: url("../images/mobile/betweenFloors/startSection-small.jpg") no-repeat;
-			background-size: cover;
-    			background-position: center center;
-		}
+	.betweenFloors_start {
+		background: url("../images/mobile/betweenFloors/startSection-small.jpg") no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height:33rem;
+	}
 
-		.betweenFloors_middle {
-			background: url("../images/mobile/betweenFloors/middleSection-small.jpg") no-repeat;
-			background-size: cover;
-    			background-position: center center;
-		}
+	.betweenFloors_middle {
+		background: url("../images/mobile/betweenFloors/middleSection-small.jpg") no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height:33rem;
+	}
 
-		.betweenFloors_top {
-			background: url("../images/mobile/betweenFloors/topSection-small.jpg") no-repeat;
-			background-size: cover;
-    			background-position: center center;
-		}
+	.betweenFloors_top {
+		background: url("../images/mobile/betweenFloors/topSection-small.jpg") no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height:33rem;
+	}
     }
     /*-----city screen-----*/
     .buildings {
