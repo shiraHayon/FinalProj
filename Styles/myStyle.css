@@ -833,11 +833,7 @@ form input[type="button"]{
 
     .mobile-div {
        font-size: 1.6rem;
-<<<<<<< HEAD
 	height: 20rem;
-=======
-	height: 35vh;
->>>>>>> origin/master
 	line-height:1.8rem;
     }
 
@@ -982,33 +978,24 @@ form input[type="button"]{
         }
 		
 		.betweenFloors_start {
-<<<<<<< HEAD
 			background: url("../images/mobile/betweenFloors/startSection-small.png") no-repeat;
-=======
-			background: url("../images/mobile/betweenFloors/buildingStartSection-small.png") no-repeat;
->>>>>>> origin/master
-			background-size: cover;
-    			background-position: center center;
+			background-size: contain;
+    			background-position: center bottom;
+			height:35rem;
 		}
 
 		.betweenFloors_middle {
-<<<<<<< HEAD
 			background: url("../images/mobile/betweenFloors/middleSection-small.png") no-repeat;
-=======
-			background: url("../images/mobile/betweenFloors/buildingMiddleSection-small.png") no-repeat;
->>>>>>> origin/master
-			background-size: cover;
-    			background-position: center center;
+			background-size: contain;
+    			background-position: center bottom;
+			height:33rem;
 		}
 
 		.betweenFloors_top {
-<<<<<<< HEAD
 			background: url("../images/mobile/betweenFloors/topSection-small.png") no-repeat;
-=======
-			background: url("../images/mobile/betweenFloors/buildingTopSection-small.png") no-repeat;
->>>>>>> origin/master
-			background-size: cover;
-    			background-position: center center;
+			background-size: contain;
+    			background-position: center bottom;
+			height:35rem;
 		}
     }
     /*-----city screen-----*/
