@@ -1,12 +1,11 @@
 ﻿$(document).ready(documentReady);
-
 function documentReady() {
 
     //run functions on easing.js and eavesdrop.js for desktop navigation
     $('.top-nav').eavesdrop();
     $('.nav-fixed').eavesdrop();
 
-    var topOfWindow = $(window).scrollTop();
+
     $("#logoNav").click(function(){
         //toggel navbar show
          $("#NavbarFloors").toggle();
@@ -15,17 +14,16 @@ function documentReady() {
     $('#NavbarFloors a').click(function(){
         //hide navbar after selecting a floor
         $('#NavbarFloors').fadeOut('fast');
-    });
-
-    animationElements();
-
+    })
+     animationElements();
+    
+    
     $(window).scroll(function(){
         animationElements();
         getHash ();
     });
+
 };
-
-
 
 function gotoCity(){
     //goto the specific div if the user is on mobile or desktop by clicking on "continue scrooling"
