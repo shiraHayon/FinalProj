@@ -986,21 +986,6 @@ form input[type="button"]{
 			background-size: cover;
     			background-position: center center;
 		}
-
-		.betweenFloors_middle {
-			background: url("../images/mobile/betweenFloors/middleSection-small.png") no-repeat;
-			background-size: contain;
-    			background-position: center bottom;
-			height:33rem;
-		}
-
-		.betweenFloors_top {
-			background: url("../images/mobile/betweenFloors/topSection-small.png") no-repeat;
-			background-size: contain;
-    			background-position: center bottom;
-			height:35rem;
->>>>>>> origin/master
-		}
     }
     /*-----city screen-----*/
     .buildings {
