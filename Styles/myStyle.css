@@ -970,6 +970,7 @@ form input[type="button"]{
         }
 		
 		.betweenFloors_start {
+<<<<<<< HEAD
 			background: url("../images/mobile/betweenFloors/buildingStartSection-small.png") no-repeat;
 			background-size: cover;
     			background-position: center center;
@@ -985,6 +986,26 @@ form input[type="button"]{
 			background: url("../images/mobile/betweenFloors/buildingTopSection-small.png") no-repeat;
 			background-size: cover;
     			background-position: center center;
+=======
+			background: url("../images/mobile/betweenFloors/startSection-small.png") no-repeat;
+			background-size: contain;
+    			background-position: center bottom;
+			height:35rem;
+		}
+
+		.betweenFloors_middle {
+			background: url("../images/mobile/betweenFloors/middleSection-small.png") no-repeat;
+			background-size: contain;
+    			background-position: center bottom;
+			height:33rem;
+		}
+
+		.betweenFloors_top {
+			background: url("../images/mobile/betweenFloors/topSection-small.png") no-repeat;
+			background-size: contain;
+    			background-position: center bottom;
+			height:35rem;
+>>>>>>> origin/master
 		}
     }
     /*-----city screen-----*/
