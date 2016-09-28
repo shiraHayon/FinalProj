@@ -593,6 +593,8 @@ form input[type="radio"] {
 form input[type="button"] {
     margin-top: 10%;
     font-size: 2rem;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 @media screen and (min-width: 1680px) {
@@ -1163,10 +1165,12 @@ form input[type="button"] {
                 margin-top: 10%;
                 height: 30px;
                 font-size: 1.7rem;
+                padding-left:0;
+                padding-right:0;
             }
 
         #tryAgainBtn {
-            margin-top: 95%;
+            margin-top: 109%;
             width: 24%;
             height: 11%;
             font-size: 1.7rem;
