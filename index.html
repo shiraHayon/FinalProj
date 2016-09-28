@@ -91,10 +91,10 @@
         </div>
 
         <!--sky screen-->
-        <div id="skyScreen" class="row hash ne full eavesdrop">
+        <div id="skyScreen" class="hidden-xs hidden-sm row hash ne full eavesdrop">
             <span id="bird1" class="col-xs-2 col-md-3 animatedLeftElement"></span>
             <div id="skyText" class="col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6">
-                <h1 class="hidden-xs hidden-sm">"הבניין שאהב לשתף"</h1>
+                <h1>"הבניין שאהב לשתף"</h1>
                 <br/>
                 <p>
                     במקום דיי נחמד במרכז המדינה
@@ -114,6 +114,31 @@
             <span id="bird2" class="col-xs-2 col-md-3 animatedRightElement"></span>
         </div>
 
+		
+		<!--sky screen-->
+        <div id="skyScreen" class="hidden-md hidden-lg mobile-betweenFloors hash">
+            <span id="bird1" class="col-xs-2 col-md-3 animatedLeftElement"></span>
+            <div id="skyText" class="col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6">
+                <br/>
+                <p>
+                    במקום דיי נחמד במרכז המדינה
+                    <br />
+                    שוכנת לה עיר מיוחדת במינה.
+                    <br />
+                    משתמשת בתבונה ובהוגנות במשאבים שברשותה,
+                    <br />
+                    ומנהלת מערכת אקולוגית גלובלית לכל תושביה לרווחה.
+                </p>
+                <a id="scrolling" onclick="gotoCity()">
+                    <span id="scrollingText">התחילו לגלול</span>
+                    <br/>
+                    <img class="floating" src="images/desktop/opening/arrow.png"/>
+                </a>
+            </div>
+            <span id="bird2" class="col-xs-2 col-md-3 animatedRightElement"></span>
+        </div>
+		
+		
         <!--desktop - city screen-->
         <div id="city" class="hidden-xs hidden-sm row">
             <div id="airplane" class="col-md-offset-3 col-md-6 animatedRightElement">
@@ -155,7 +180,7 @@
         </div>
 
         <!--between floors start-->
-        <div class="hidden-xs hidden-sm row mobile-row betweenFloors_start"></div>
+        <div class="hidden-xs hidden-sm row betweenFloors_start"></div>
 		
         <!--floor1 desktop - family screen-->
         <div id="floor1" class="hidden-xs hidden-sm row two full eavesdrop">
