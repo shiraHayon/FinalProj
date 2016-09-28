@@ -640,7 +640,6 @@ form input[type="button"]{
 #about {
     background-color: #33CCCC;
     position: relative;
-    overflow-x: hidden
 }
 
 #aboutText{
