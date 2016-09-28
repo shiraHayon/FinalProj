@@ -825,6 +825,8 @@ form input[type="button"]{
 	
 	.mobile-betweenFloors{
 		height: 50rem;
+		margin-right: -15px;
+		margin-left: -15px;
 	}
 
     .rtl .navbar-header{
