@@ -530,7 +530,6 @@ body{
 #questionnaire {
     background-color: #E4DBCD;
     position: relative;
-    overflow-x: hidden;
 }
 
 #clipBorad {
