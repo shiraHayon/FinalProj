@@ -523,7 +523,6 @@ body{
 #questionnaire {
     background-color: #E4DBCD;
     position: relative;
-    overflow-x: hidden;
 }
 
 #clipBorad {
@@ -945,7 +944,6 @@ form input[type="button"]{
         background-size: contain;
         background-position: center;
         background-attachment: fixed;
-	height:100%;
     }
 
     .betweenFloors_middle {
@@ -953,7 +951,6 @@ form input[type="button"]{
         background-size: contain;
         background-position: center;
         background-attachment: fixed;
-	height:100%;
     }
 
     .betweenFloors_top {
@@ -961,35 +958,35 @@ form input[type="button"]{
         background-size: contain;
         background-position: center top;
         background-attachment: fixed;
-	height:100%;
     }
 	@media screen and (max-device-width: 480px){
-        #skyText {
+		
+	#skyText {
             margin-top: 50%;
             font-size: 1.5rem;
         }
          #scrollingText {
             font-size: 1.5rem;
         }
-		
+
 	.betweenFloors_start {
 		background: url("../images/mobile/betweenFloors/startSection-small.jpg") no-repeat;
-		background-size: cover;
-		background-position: center center;
+		background-size: contain;
+		background-position: center bottom;
 		height:33rem;
 	}
 
 	.betweenFloors_middle {
 		background: url("../images/mobile/betweenFloors/middleSection-small.jpg") no-repeat;
-		background-size: cover;
-		background-position: center center;
+		background-size: contain;
+		background-position: center bottom;
 		height:33rem;
 	}
 
 	.betweenFloors_top {
 		background: url("../images/mobile/betweenFloors/topSection-small.jpg") no-repeat;
-		background-size: cover;
-		background-position: center center;
+		background-size: contain;
+		background-position: center bottom;
 		height:33rem;
 	}
     }
