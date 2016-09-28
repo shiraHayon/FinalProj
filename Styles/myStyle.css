@@ -1091,21 +1091,21 @@ form input[type="button"] {
         }
 
             #NavbarFloors div {
-                padding: 8px 0;
+                padding: 7px 0;
             }
 
         #navFloor1, #navFloor2, #navFloor3, #navFloor4, #navFloor5 {
-            background-size: 47%;
+            background-size: 45%;
             margin-top: -1px;
         }
 
         #navAbout {
-            background-size: 47%;
+            background-size: 45%;
             margin-top: -15%;
         }
 
         #navOpening {
-            background-size: 47%;
+            background-size: 45%;
             margin-top: -1px;
         }
 
