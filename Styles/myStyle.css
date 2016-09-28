@@ -1154,14 +1154,14 @@ form input[type="button"] {
         }
 
         form {
-            margin-top: 60%;
-            font-size: 1rem;
-            line-height: 1.4rem;
+            margin-top: 50%;
+            font-size: 1.5rem;
+            line-height: 2.4rem;
         }
 
             form input[type="radio"] {
-                height: 11px;
-                width: 14px;
+                height: 19px;
+                width: 28px;
             }
 
             form input[type="button"] {
