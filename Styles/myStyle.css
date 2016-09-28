@@ -763,10 +763,6 @@ form input[type="button"]{
 
     }
 
-    .mobile-row {
-        height: 60%;
-    }
-
     #bulldingMenu {
         margin-top: 20%;
     }
@@ -822,10 +818,14 @@ form input[type="button"]{
     }
 
     .mobile-div {
-       font-size: 1.6rem;
-	height: 20rem;
-	line-height:1.8rem;
+		font-size: 1.6rem;
+		height: 20rem;
+		line-height:1.8rem;
     }
+	
+	.mobile-betweenFloors{
+		height: 50rem;
+	}
 
     .rtl .navbar-header{
         margin-right: 0;
