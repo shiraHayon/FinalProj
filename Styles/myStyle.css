@@ -338,6 +338,15 @@ body {
         line-height: 2.1rem;
     }
 }
+
+@media only screen and (min-width: 1920x) {
+    #floor2Text p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+
+
 /*end text properties*/
 
 /*floor3 - old people*/
@@ -1165,8 +1174,8 @@ form input[type="button"] {
                 margin-top: 10%;
                 height: 30px;
                 font-size: 1.7rem;
-                padding-left:0;
-                padding-right:0;
+                padding-left: 0;
+                padding-right: 0;
             }
 
         #tryAgainBtn {
