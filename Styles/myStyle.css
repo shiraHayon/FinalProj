@@ -832,7 +832,11 @@ form input[type="button"]{
     .rtl .navbar-header{
         margin-right: 0;
     }
-
+	
+	.rtl .row {
+		height: 50rem;
+	}
+	
     .navbar-brand{
         font-size: 2.2rem;
         font-weight: bold;
@@ -972,7 +976,7 @@ form input[type="button"]{
 		.betweenFloors_start {
 			background: url("../images/mobile/betweenFloors/buildingStartSection-small.png") no-repeat;
 			background-size: cover;
-    			background-position: center center;
+			background-position: center center;
 		}
 
 		.betweenFloors_middle {
