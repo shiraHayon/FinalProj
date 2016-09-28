@@ -1,4 +1,4 @@
-/*-----general properties-----*/
+﻿/*-----general properties-----*/
 
 html, body {
     width: 100%;
@@ -49,7 +49,7 @@ body{
     }
 
 #bird1{ 
-    background: url("../images/flyingBird-toLeft.gif") no-repeat;
+    background: url("../images/flyingBird.gif") no-repeat;
     background-size: contain;
     background-position: center;
     height: 15%;    
@@ -59,7 +59,7 @@ body{
 }
 
 #bird2{
-    background: url("../images/flyingBird-toRight.gif") no-repeat;
+    background: url("../images/flyingBird.gif") no-repeat;
     background-size: contain;
     background-position: center;
     height: 15%;
@@ -257,7 +257,7 @@ body{
 @media only screen and (min-width: 1024px) {
     #floor1Text p {
         line-height: 1.5rem;
-        font-size:1.4rem;
+        font-size: 14rem;
     }
 }
 
@@ -333,13 +333,6 @@ body{
     #floor2Text p {
         font-size: 1.6rem;
         line-height: 2.1rem;
-    }
-}
-
-@media only screen and (min-width: 1920px){
-    #floor2Text p {
-        font-size: 2rem;
-        line-height: 2.5rem;
     }
 }
 /*end text properties*/
@@ -518,8 +511,8 @@ body{
 
 @media only screen and (min-width: 1680px) {
     #floor5Text p {
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
     }
 }
 
@@ -530,12 +523,12 @@ body{
 #questionnaire {
     background-color: #E4DBCD;
     position: relative;
+    overflow-x: hidden;
 }
 
 #clipBorad {
     background: url("../images/desktop/floor5/clipboard.svg") no-repeat;
-    background-size: contain
-    ;
+    background-size: contain;
     background-position: center bottom;
     height: 100%;
 }
@@ -977,19 +970,19 @@ form input[type="button"]{
         }
 		
 		.betweenFloors_start {
-			background: url("../images/mobile/betweenFloors/startSection-small.png") no-repeat;
+			background: url("../images/mobile/betweenFloors/buildingStartSection-small.png") no-repeat;
 			background-size: cover;
     			background-position: center center;
 		}
 
 		.betweenFloors_middle {
-			background: url("../images/mobile/betweenFloors/middleSection-small.png") no-repeat;
+			background: url("../images/mobile/betweenFloors/buildingMiddleSection-small.png") no-repeat;
 			background-size: cover;
     			background-position: center center;
 		}
 
 		.betweenFloors_top {
-			background: url("../images/mobile/betweenFloors/topSection-small.png") no-repeat;
+			background: url("../images/mobile/betweenFloors/buildingTopSection-small.png") no-repeat;
 			background-size: cover;
     			background-position: center center;
 		}
@@ -1072,7 +1065,7 @@ form input[type="button"]{
     /*-----floor5 - unmanned floor-----*/
     #clipBorad {
         background: url("../images/mobile/floor5/clipboardSmall-02.svg") no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
 
