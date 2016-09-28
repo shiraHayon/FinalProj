@@ -1066,7 +1066,13 @@ form input[type="button"]{
         background-size: contain;
         background-position: center;
     }
-
+	
+	@media screen and (max-device-width: 480px){
+		#clipBorad {
+			background-position: center bottom;
+			height: 85%;
+		}
+	}
     #openQuestionnaire {
         margin-top: 40%;
         text-align: center;
