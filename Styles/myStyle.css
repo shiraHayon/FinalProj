@@ -51,7 +51,7 @@ body {
     }
 
 #bird1 {
-    background: url("../images/flyingBird.gif") no-repeat;
+    background: url("../images/flyingBird-toLeft.gif") no-repeat;
     background-size: contain;
     background-position: center;
     height: 15%;
@@ -61,7 +61,7 @@ body {
 }
 
 #bird2 {
-    background: url("../images/flyingBird.gif") no-repeat;
+    background: url("../images/flyingBird-toRight.gif") no-repeat;
     background-size: contain;
     background-position: center;
     height: 15%;
@@ -544,6 +544,10 @@ body {
     line-height: 55px;
 }
 
+.blue-btn {
+    background-color: #5bc0de;
+}
+
 .displayNone {
     display: none;
 }
@@ -755,6 +759,11 @@ form input[type="button"] {
 
 @media screen and (max-width: 991px) {
     /*-----general prperties-----*/
+    #city-mobile, #floor1-mobile, #floor2-mobile, #floor3-mobile, #floor4-mobile {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
     .main-div {
         height: 70%;
     }
@@ -799,25 +808,6 @@ form input[type="button"] {
 
     #logoNav {
         height: 160%;
-    }
-    /*show specific div for the user to turn his device to portrait*/
-    @media screen and (max-device-width: 736px) and (orientation: landscape) {
-        body {
-            overflow-y: hidden;
-        }
-
-        .landscapeDisplay {
-            display: block;
-            background-color: #8CC9DB;
-        }
-
-        #rotateDevice {
-            text-align: center;
-        }
-
-        #mobileFixedBar {
-            display: none;
-        }
     }
 
     #NavbarFloors {
@@ -924,14 +914,14 @@ form input[type="button"] {
         background-position: center bottom;
     }
 
-    #airplane p {
-        margin-right: 5px;
+    #airplane {
+        background: url("../images/mobile/city/airplane.svg") no-repeat;
+        background-size: contain;
+        background-position: center center;
+        height: 8%;
     }
 
-    #floor1-mobile, #floor2-mobile, #floor3-mobile, #floor4-mobile {
-        overflow-x: hidden; 
-        overflow-y:hidden;
-    }
+
 
     /*-----floor1 - family-----*/
     #floor1 {
@@ -1050,6 +1040,10 @@ form input[type="button"] {
     }
 
     @media screen and (max-device-width: 480px) {
+        .rtl .row {
+            height: 65rem;
+        }
+
         .landscapeDisplay {
             display: none;
         }
@@ -1061,15 +1055,11 @@ form input[type="button"] {
         .mobile-div {
             font-size: 1.6rem;
             height: 35%;
-            line-height: 1.8rem;
+            line-height: 2rem;
         }
 
         .rtl .navbar-header {
             margin-right: 0;
-        }
-
-        .rtl .row {
-            height: 60rem;
         }
 
         .navbar-brand {
@@ -1101,8 +1091,23 @@ form input[type="button"] {
         }
 
             #NavbarFloors div {
-                padding: 22px 0;
+                padding: 8px 0;
             }
+
+        #navFloor1, #navFloor2, #navFloor3, #navFloor4, #navFloor5 {
+            background-size: 47%;
+            margin-top: -1px;
+        }
+
+        #navAbout {
+            background-size: 47%;
+            margin-top: -15%;
+        }
+
+        #navOpening {
+            background-size: 47%;
+            margin-top: -1px;
+        }
 
         #skyText {
             margin-top: 50%;
@@ -1144,8 +1149,8 @@ form input[type="button"] {
         #openQuestionnaire {
             margin-top: 40%;
             text-align: center;
-            font-size: 1.2rem;
-            line-height: 3rem;
+            font-size: 2.5rem;
+            line-height: 4rem;
         }
 
         form {
@@ -1229,4 +1234,24 @@ form input[type="button"] {
         #NavbarFloors .active .glyphicon {
             color: black;
         }
+
+    /*show specific div for the user to turn his device to portrait*/
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .landscapeDisplay {
+            display: block;
+            background-color: #8CC9DB;
+        }
+
+        #rotateDevice {
+            text-align: center;
+        }
+
+        #mobileFixedBar {
+            display: none;
+        }
+    }
 }
