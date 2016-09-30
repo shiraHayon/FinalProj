@@ -49,7 +49,7 @@ var isiPad = navigator.userAgent.match(/iPad/i) != null;
             //function for elemts with slideLeft class
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+200) {
+            if (imagePos < topOfWindow+300) {
                 $(this).addClass("slideLeft");
             }else {
                 $(this).removeClass("slideLeft");
@@ -60,7 +60,7 @@ var isiPad = navigator.userAgent.match(/iPad/i) != null;
             //function for elemts with slideRight class
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+200) {
+            if (imagePos < topOfWindow+300) {
                 $(this).addClass("slideRight");
             }else {
                 $(this).removeClass("slideRight");

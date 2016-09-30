@@ -55,7 +55,7 @@ body {
     background-size: contain;
     background-position: center;
     height: 15%;
-    top: 40%;
+    top: 30%;
     position: absolute;
     visibility: hidden;
 }
@@ -65,7 +65,7 @@ body {
     background-size: contain;
     background-position: center;
     height: 15%;
-    top: 20%;
+    top: 10%;
     position: absolute;
     visibility: hidden;
 }
@@ -549,8 +549,8 @@ body {
 #openQuestionnaire {
     margin-top: 20%;
     text-align: center;
-    font-size: 25px;
-    line-height: 55px;
+    font-size: 2.5rem;
+    line-height: 5.5rem;
 }
 
 .blue-btn {
@@ -574,13 +574,20 @@ form {
     line-height: 3rem;
 }
 
+@media only screen and (min-width: 1920px) {
+    #statrQuizeBtn {
+        font-size: 3rem;
+        margin-top: 4%;
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     #openQuestionnaire {
-        margin-top: 40%;
+        margin-top: 25%;
     }
 
     form {
-        margin-top: 70%;
+        margin-top: 50%;
     }
 }
 
@@ -591,6 +598,13 @@ form {
 
     form {
         margin-top: 25%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #openQuestionnaire {
+        font-size: 4rem;
+        line-height: 8rem;
     }
 }
 
@@ -644,7 +658,7 @@ form input[type="button"] {
     padding-top: 2%;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1366px) {
     #faliledText {
         line-height: 1.6rem;
     }
@@ -653,8 +667,28 @@ form input[type="button"] {
 
 #notExcepted {
     font-weight: 800;
-    font-size: 2em;
+    font-size: 3em;
     color: #ac1f25;
+}
+
+#faliledText p {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1920px) {
+    #faliledText p {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    #notExcepted {
+        font-size: 3.5rem;
+    }
+
+    #tryAgainBtn {
+        font-size: 2rem;
+    }
 }
 /*-----end floor5 - Unmanned floor-----*/
 
@@ -1179,7 +1213,7 @@ form input[type="button"] {
             }
 
         #tryAgainBtn {
-            margin-top: 109%;
+            margin-top: 100%;
             width: 24%;
             height: 11%;
             font-size: 1.7rem;
