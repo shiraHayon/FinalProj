@@ -31,11 +31,6 @@ body {
     z-index: 3;
 }
 
-#mobileNav {
-    float: left;
-    margin-top: 3%;
-}
-
 /*-----intro-----*/
 #skyScreen {
     background: url("../images/desktop/opening/SkyDesktop.svg") no-repeat;
@@ -814,17 +809,40 @@ form input[type="button"] {
         overflow-y: hidden;
     }
 
+    .navbar-header h1 {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: 'Assistant', sans-serif;
+        font-weight: bold;
+    }
+
+    .navbar-brand {
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding-top: 5%;
+        padding-right: 25%;
+    }
+
+    #navbarContent {
+        padding-right: 0;
+    }
+
+    #mobileNav {
+        float: left;
+        margin-top: 3%;
+    }
+
     .main-div {
         height: 70%;
     }
 
     .mobile-div {
         background-image: url('../images/mobile/vintage_speckles.png');
-        font-size: 2rem;
+        font-size: 3rem;
         height: 30%;
         position: absolute;
         padding-right: 5%;
-        line-height: 1.8rem;
+        line-height: 2.8rem;
     }
 
     .mobile-betweenFloors {
@@ -839,10 +857,6 @@ form input[type="button"] {
 
     #mobileFixedBar {
         height: 8%;
-    }
-
-    .rtl .navbar-header {
-        margin-right: 15%;
     }
 
     #navbarContent {
@@ -1035,8 +1049,8 @@ form input[type="button"] {
     #openQuestionnaire {
         margin-top: 40%;
         text-align: center;
-        font-size: 2.5rem;
-        line-height: 50px;
+        font-size: 3.5rem;
+        line-height: 5rem;
     }
 
     form {
@@ -1047,6 +1061,11 @@ form input[type="button"] {
 
     #errorMessage {
         font-size: 1rem;
+    }
+
+    #statrQuizeBtn {
+        font-size: 3rem;
+        margin-top: 5%;
     }
 
     #successQuestionnaire-mobile {
@@ -1095,6 +1114,8 @@ form input[type="button"] {
             height: 65rem;
         }
 
+
+
         .landscapeDisplay {
             display: none;
         }
@@ -1117,7 +1138,7 @@ form input[type="button"] {
             font-size: 2.2rem;
             font-weight: bold;
             padding-top: 5%;
-            padding-right: 0px;
+            padding-right: 11%;
         }
 
         #mobileFixedBar {
