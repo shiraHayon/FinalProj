@@ -60,11 +60,8 @@
                         <a href="#skyScreen"><img id="logoNav" src="images/mobile/navigationBar/navLogo.svg" /></a>
                     </span>
                     <span class="navbar-brand">הבניין שאהב לשתף</span>
-
-
-
+                    <a href="#NavbarFloors"><img id="mobileNav" src="images/mobile/navigationBar/hamburgerNav.svg" /></a>
                 </div>
-                <span class="glyphicon glyphicon-menu-hamburger"></span>
             </div>
         </nav>
         <!--mobile navbar-->
@@ -437,12 +434,26 @@
         <div id="questionnaire" class="row">
             <div id="clipBorad" class="col-xs-12">
                 <p id="openQuestionnaire">
-                    ענו על 5 שאלות ובדקו
-                    <br />
-                    האם אתם מתאימים להיות הדיירים החדשים בבניין
-                    <br />
-                    בהצלחה!
-                    <br />
+                    <span class="hidden-xs hidden-sm">
+                        ענו על 5 שאלות ובדקו
+                        <br />
+                        האם אתם מתאימים להיות הדיירים החדשים בבניין
+                        <br />
+                        בהצלחה!
+                        <br />
+                    </span>
+
+                    <span class="hidden-md hidden-lg">
+                        ענו על 5 שאלות ובדקו
+                        <br />
+                        האם אתם מתאימים להיות
+                        <br />
+                        הדיירים החדשים בבניין
+                        <br />
+                        בהצלחה!
+                        <br />
+                    </span>
+
                     <button id="statrQuizeBtn" class="btn blue-btn btn-lg" onclick="startQuestionnaire('qestOne','openQuestionnaire')">התחילו</button>
                 </p>
                 <div id="qestOne" class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 displayNone">

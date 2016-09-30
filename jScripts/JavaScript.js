@@ -6,7 +6,7 @@ function documentReady() {
     $('.nav-fixed').eavesdrop();
 
 
-    $("#logoNav").click(function(){
+    $("#mobileNav").click(function () {
         //toggel navbar show
          $("#NavbarFloors").toggle();
     }); 

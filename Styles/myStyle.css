@@ -31,9 +31,10 @@ body {
     z-index: 3;
 }
 
-    #Logo img {
-        width: 80px;
-    }
+#mobileNav {
+    float: left;
+    margin-top: 3%;
+}
 
 /*-----intro-----*/
 #skyScreen {
@@ -699,19 +700,22 @@ form input[type="button"] {
 }
 
 #aboutText {
-    text-align: center;
     margin-top: 4%;
 }
 
-#project h3 {
-    font-family: 'Assistant', sans-serif;
-    font-size: 2.8rem;
-    font-weight: bold;
+#project {
+    text-align: center;
 }
 
-#project p {
-    font-size: 2.4rem;
-}
+    #project h3 {
+        font-family: 'Assistant', sans-serif;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    #project p {
+        font-size: 2.4rem;
+    }
 
 #telemLink {
     font-size: 2rem;
@@ -728,7 +732,6 @@ form input[type="button"] {
 }
 
 #holon p, #HIT p {
-    text-align: initial;
     font-size: 2rem;
 }
 
@@ -736,10 +739,12 @@ form input[type="button"] {
     font-size: 1.1rem;
     position: absolute;
     bottom: 5%;
+    text-align: center;
 }
 
 @media screen and (max-width:1366px) {
     #copyright {
+        text-align: center;
         margin-top: 5%;
     }
 }
@@ -758,11 +763,11 @@ form input[type="button"] {
     }
 
     #holon p, #HIT p {
-        text-align: initial;
         font-size: 2.5rem;
     }
 
     #copyright {
+        text-align: center;
         margin-top: 15%;
         font-size: 1.5rem;
     }
@@ -783,11 +788,11 @@ form input[type="button"] {
     }
 
     #holon p, #HIT p {
-        text-align: initial;
         font-size: 2.6rem;
     }
 
     #copyright {
+        text-align: center;
         margin-top: 10%;
         font-size: 2rem;
     }
@@ -1081,6 +1086,7 @@ form input[type="button"] {
     }
 
     #copyright {
+        text-align: center;
         margin-top: 25%;
     }
 
@@ -1221,19 +1227,22 @@ form input[type="button"] {
         }
 
         #aboutText {
-            text-align: center;
             margin-top: 25%;
         }
 
-        #project h3 {
-            font-family: 'Assistant', sans-serif;
-            font-size: 1.8rem;
-            font-weight: bold;
+        #project {
+            text-align: center;
         }
 
-        #project p {
-            font-size: 1.4rem;
-        }
+            #project h3 {
+                font-family: 'Assistant', sans-serif;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            #project p {
+                font-size: 1.4rem;
+            }
 
         #telemLink {
             font-size: 1.2rem;
@@ -1254,11 +1263,11 @@ form input[type="button"] {
         }
 
         #holon p, #HIT p {
-            text-align: initial;
             font-size: 1.2rem;
         }
 
         #copyright {
+            text-align: center;
             font-size: 1.1rem;
         }
     }
