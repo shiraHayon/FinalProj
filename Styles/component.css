@@ -88,8 +88,8 @@ transform: translateX(-50%) translateY(0%);
 transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .dotstyle-tooltip li.active {
--webkit-transform: scale(1.2);
-transform: scale(1.2);
+-webkit-transform: scale(1.4);
+transform: scale(1.4);
 background-clip: content-box;
 padding:3px;
 }
